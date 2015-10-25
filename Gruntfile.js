@@ -63,10 +63,10 @@ module.exports = function (grunt) {
             /* mac */
             "cef-mac": {
                 "dest"      : "<%= downloads %>",
-                "src"       : "<%= cef.url %>/cef_binary_<%= cef.version %>_macosx32.zip"
+                "src"       : "<%= cef.url %>/cef_binary_<%= cef.version %>_macosx64.zip"
             },
             "cef-mac-symbols": {
-                "src"  : "<%= cef.url %>/cef_binary_<%= cef.version %>_macosx32_release_symbols.zip",
+                "src"  : "<%= cef.url %>/cef_binary_<%= cef.version %>_macosx64_release_symbols.zip",
                 "dest" : "<%= downloads %>/cefsymbols"
             },
             "node-mac": {
@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         },
         "cef": {
             "url"           : "http://s3.amazonaws.com/files.brackets.io/cef",
-            "version"       : "3.2454.1342.g4e94f47"
+            "version"       : "3.2454.1343.g3d84012"
         },
         "node": {
             "version"       : "0.10.24"
